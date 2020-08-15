@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "903441861431",
+    "firebase_url": "https://houseit-887bc.firebaseio.com",
+    "project_id": "houseit-887bc",
+    "storage_bucket": "houseit-887bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903441861431:android:afc7b997ea3a4866e9a8b2",
+        "android_client_info": {
+          "package_name": "com.example.houseit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903441861431-0nkask0vcfabscmt2ft51slas7gf6t8r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.houseit",
+            "certificate_hash": "6169036dcf93c668d204631cbe16c9d3fba75e8d"
+          }
+        },
+        {
+          "client_id": "903441861431-d8plsbuerbkill4goirscbcknpjuqbpb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRWeXOApFPI69ZcgciJVBMnC89ZE8Cgvw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903441861431-d8plsbuerbkill4goirscbcknpjuqbpb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
