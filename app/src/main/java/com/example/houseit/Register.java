@@ -43,7 +43,7 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         // link class variables to physical attributes
-        FullName        = findViewById(R.id.fullName);
+        FullName        = findViewById(R.id.firstName);
         Password        = findViewById(R.id.password);
         Email           = findViewById(R.id.email);
         RegisterButton  = findViewById(R.id.registerButton);
