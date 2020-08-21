@@ -1,31 +1,65 @@
-package com.example.houseit;
+package com.example.houseit.models;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class House {
 
-    public String houseCode;
-    public int totalUsers = 1;           // tracks # of users, init = 1
-    public String headofHouse;      // creator of household
-    //public String[] housemates;
-    public House(String userId, boolean create){
-        // user is creating a house
-        if(create){
-            headofHouse = userId;
-            //housemates.
-        }
-        else {
-            totalUsers++;
+    private String houseCode;
+    private List<List<String>> lists;       // lists containing
+    private int totalUsers = 1;             // tracks # of users, init = 1
+    private String headofHouse;             // creator of household
+    private ArrayList<String> housemates = new ArrayList<>();
 
-        }
+
+    //public String[] housemates;
+
+    public House(){
+        //need an empty constructor
+    }
+
+    public House(String userId){
+        // user is creating a house
+
+            headofHouse = userId;
+
+            housemates.add(userId);
+
+
 
     }
+
+
+
+    public List<List<String>> getLists() {
+        return lists;
+    }
+
+    public int getTotalUsers() {
+        return totalUsers;
+    }
+
+    public String getHeadofHouse() {
+        return headofHouse;
+    }
+
+    public ArrayList<String> getHousemates() {
+        return housemates;
+    }
+
     public String getHouseCode(){
         return houseCode;
     }
     public void setHouseCode(String enteredCode){
 
         houseCode = enteredCode;
+    }
+
+    public void addUser(String userId){
+        totalUsers++;
+        housemates.add(userId);
+
     }
     public void genCode(){
         int leftLimit = 97; // letter 'a'

@@ -56,7 +56,7 @@ public class Register extends AppCompatActivity {
 
         // if the current user exists then send them to the Main Activity
         if(fAuth.getCurrentUser() != null){
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            startActivity(new Intent(getApplicationContext(), NoHouse.class));
             finish();
         }
         // When the register button is pressed
@@ -106,7 +106,7 @@ public class Register extends AppCompatActivity {
                                 }
                             });
 
-                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            startActivity(new Intent(getApplicationContext(), NoHouse.class));
                         }
                         else{
                             Toast.makeText(Register.this, "Error: "+ task.getException().getMessage(),Toast.LENGTH_SHORT).show();
